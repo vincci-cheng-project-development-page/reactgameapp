@@ -114,22 +114,10 @@ export default class App extends Component {
     const scrambledCurtailedSelection = [];
     for (let i=0; i<curtailedQuestionTogether.length; i++){
       scrambledCurtailedSelection.push(curtailedQuestionTogether[i].question)}
-/*     scrambledCurtailedSelection.push(
-      curtailedQuestionTogether[2],
-      curtailedQuestionTogether[0],
-      curtailedQuestionTogether[3],
-      curtailedQuestionTogether[1],
-      curtailedQuestionTogether[4]
-    );*/
+    
     const questionsArray = []
     for (let i=0; i<scrambledCurtailedSelection.length; i++){
     questionsArray.push(scrambledCurtailedSelection[i].question)}
-/*     questionsArray.push(scrambledCurtailedSelection[0].question,
-      scrambledCurtailedSelection[1].question,
-      scrambledCurtailedSelection[2].question,
-      scrambledCurtailedSelection[3].question,
-      scrambledCurtailedSelection[4].question,
-      ) */
 
     this.setState((prevState) => ({
       ...prevState,
